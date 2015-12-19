@@ -5,6 +5,7 @@
 
 class BigInt {
 public:
+    BigInt() = delete;
     BigInt(int x);
     BigInt(const std::vector< int >& value);
     BigInt(const std::initializer_list< int >& list);
@@ -14,8 +15,6 @@ public:
 
 private:
     std::vector< int > value_;
-
-    BigInt();
 };
 
 BigInt::BigInt(int x) {
