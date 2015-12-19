@@ -104,7 +104,7 @@ int main(int argc, char* argv[]) {
         //std::unique_ptr<BaseProtected> p = std::make_unique<DerivedProtected>();
 
         // Non-polymorphic usage OK
-        // Does not require virtual, derived type has access to protected memeber
+        // Does not require virtual, derived type has access to protected member
         std::unique_ptr<DerivedProtected> p = std::make_unique<DerivedProtected>();
     } std::cout << std::endl;
     return 0;
